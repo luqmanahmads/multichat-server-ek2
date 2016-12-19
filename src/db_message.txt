@@ -1,0 +1,52 @@
+luqman adit 1 2 2016/11/15 23:48:13
+hao
+terserah:luqman adit 2 2 2016/11/15 23:48:22
+rekk
+terserah:luqman nama 2 1 2016/11/15 23:48:22
+rekk
+terserah:luqman tion 2 2 2016/11/15 23:48:22
+rekk
+delia adit 1 2 2016/11/16 14:25:45
+halo dit
+delia luqman 1 2 2016/11/16 14:26:50
+halo man
+tion luqman 1 2 2016/11/16 14:27:19
+oi man
+tion adit 1 2 2016/11/16 14:27:55
+dit dit
+broadcast:tion luqman 3 2 2016/11/16 14:31:30
+demo progjar senin minggu depan!
+broadcast:tion adit 3 2 2016/11/16 14:31:30
+demo progjar senin minggu depan!
+broadcast:tion delia 3 2 2016/11/16 14:31:30
+demo progjar senin minggu depan!
+broadcast:tion syuhada 3 1 2016/11/16 14:31:30
+demo progjar senin minggu depan!
+broadcast:tion nama 3 1 2016/11/16 14:31:30
+demo progjar senin minggu depan!
+delia luqman 1 2 2016/11/21 13:07:20
+halo man?
+broadcast:delia luqman 3 2 2016/11/21 13:10:11
+PENGUMUMAN : demo progjar hari selasa 07.00 di LP2
+broadcast:delia adit 3 2 2016/11/21 13:10:11
+PENGUMUMAN : demo progjar hari selasa 07.00 di LP2
+broadcast:delia tion 3 2 2016/11/21 13:10:11
+PENGUMUMAN : demo progjar hari selasa 07.00 di LP2
+broadcast:delia syuhada 3 1 2016/11/21 13:10:11
+PENGUMUMAN : demo progjar hari selasa 07.00 di LP2
+broadcast:delia nama 3 1 2016/11/21 13:10:11
+PENGUMUMAN : demo progjar hari selasa 07.00 di LP2
+tc14:adit luqman 2 2 2016/11/24 11:31:21
+test
+tc14:adit tion 2 2 2016/11/24 11:31:21
+test
+tc14:adit delia 2 2 2016/11/24 11:31:21
+test
+adit adit 1 2 2016/11/24 11:45:03
+hola
+tc14:luqman adit 2 1 2016/11/24 13:29:12
+halo rek 
+tc14:luqman tion 2 1 2016/11/24 13:29:12
+halo rek
+tc14:luqman delia 2 2 2016/11/24 13:29:12
+halo rek
