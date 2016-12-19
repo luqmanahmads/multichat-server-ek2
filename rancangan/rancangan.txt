@@ -1,0 +1,169 @@
+100 : sukses
+200 : gagal command tidak dikenali
+	210 : syntax error (command dikenali namun salah pemakaian)
+	220 : autentikasi error (belum login)
+	230 : register error
+		231 : username terpakai
+		232 : confirm password error
+	240 : login 
+		241 : username tidak tersedia
+		242 : password salah
+		243 : username sedang online
+	250 : send message error
+		251 : penerima tidak terdaftar
+	260 : group message error
+		261 : nama grup tidak terdaftar 
+	270 : create group error
+		271 : nama grup telah terpakai
+	280 : chat group
+		281 : grup tidak ada
+		282 : belum tergabung dalam grup
+	290 : gabung group
+		291 : sudah menjadi anggota group
+		292 : password group salah
+		293 : group tidak ada
+
+===========
+PROSES UMUM
+===========
+merupakan proses2 yang dapat dilakukan tanpa melakukan login
+
+1. login : untuk login/memulai session
+	berhasil
+		sesuai format dan ketentuan : 100
+	gagal
+		username tidak ada 	: 241
+		username sedang online	: 243
+		password salah		: 232
+		syntax error		: 210
+
+2. register : untuk mendaftarkan akun
+	berhasil
+		sesuai format dan ketentuan : 100
+	gagal
+		username terpakai		: 231
+		confirm password tidak cocok	: 232
+
+3. exit : untuk memutus koneksi dari server
+	berhasil	: 100
+
+==========================
+PROSES DALAM KEADAAN LOGIN
+==========================
+merupakan proses2 yang memerlukan autentikasi atau login. terdiri dari 3 jenis :
+
+PENGECEKKAN STATUS
+------------------
+merupakan proses2 untuk meminta informasi dari server.
+proses2 ini menampilkan "message tambahan" sebagai informasi yang diberikan server.
+
+whoami : untuk meminta informasi session saat ini. pengecekkan akun yg terkoneksi.
+	berhasil
+		contoh :
+		[---username---]
+		[---client_address---]
+		[---client_port---]
+		SUKSES 100
+	gagal
+		belum login : 220
+
+online : untuk melihat user yang sedang online
+	berhasil
+		contoh :
+		[---username---]
+		[---username---]
+		[---username---]
+		SUKSES 101
+	gagal
+		belum login : 220
+
+check : untuk menampilkan pesan yang belum terbaca
+	berhasil
+		contoh :
+		[---pesan---]
+		[---pesan---]
+		[---pesan---]
+		SUKSES 100
+
+		format pesan berupa :
+		[tanggal] [waktu] [pengirim] [pesan]
+		atau
+		[tanggal] [waktu] [group:pengirim] [pesan]
+		atau
+		[tanggal] [waktu] [broadcast:pengirim] [pesan]
+		
+		contoh lengkap :
+		2016/16/11 23:00:00 adit assalamu'alaikum?
+		2016/16/11 23:00:00 tc14:adit assalamu'alaikum?
+		2016/16/11 23:00:00 broadcast:adit assalamu'alaikum?
+		SUKSES 100
+	gagal
+		belum login : 220
+
+checkpast : untuk menampilkan seluruh pesan yg sudah terbaca
+	berhasil 
+		SUKSES 100
+	gagal
+		belum login : 220
+
+PENGIRIMAN PESAN
+----------------
+merupakan proses2 yang berguna untuk pengiriman pesan ke akun atau group tertentu, atau mengirim ke seluruh akun terdaftar
+
+send : untuk mengirim pesan ke akun tertentu
+	berhasil
+		SUKSES 100
+	gagal
+		penerima tidak terdaftar : 251
+		belum login : 220
+		syntax error : 210
+
+broadcast : untuk mengirim pesan ke seluruh akun terdaftar
+	berhasil
+		SUKSES 100
+
+chatgroup : untuk mengirim pesan ke grup
+	berhasil
+		SUKSES 100
+	gagal
+		grup tidak ada : 281
+		belum tergabung dengan grup : 282
+		syntax error : 210
+
+OPERASI AKUN
+------------
+merupakan proses2 yang berguna untuk pengelolaan akun
+
+logout : untuk mengakhiri session tanpa memutus koneksi
+	berhasil
+		SUKSES 100
+	gagal
+		belum login : 220
+
+creategroup : untuk membuat grup
+	berhasil
+		SUKSES 100
+	gagal
+		nama grup terpakai : 271
+		syntax error : 210
+
+joingroup : untuk bergabung ke suatu grup
+	berhasil
+		SUKSES 100
+	gagal
+		sudah menjadi anggota grup 	: 291
+		password grup salah 		: 292
+		nama grup tidak ada		: 293
+		syntax error
+
+
+****************************************************
+demo :
+deskripsi
+kode singkat utk retval
+tambah check message (tanggal, jam, status, message)
+tambah status message yg sudah dibaca
+
+10.151.36.250
+kelompok 2 : 10020
+****************************************************
