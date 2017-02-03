@@ -6,10 +6,10 @@ merupakan repository multichat server kelompok 2 dalam mata kuliah pemrograman j
 multichat server
 ----------------
 
--server file     : src/multichat_server.py
--data user chat  : src/db.txt
--data group chat : src/db_group.txt
--data pesan chat : src/db_message.txt
+- server file     : src/multichat_server.py
+- data user chat  : src/db.txt
+- data group chat : src/db_group.txt
+- data pesan chat : src/db_message.txt
 
 cara penggunaan
 
@@ -20,9 +20,9 @@ cara penggunaan
 gui client
 ----------
 
--server file     : src/server-kelompok-3/server-2.py
--data server     : src/server-kelompok-3/daftarAnggota.txt
--client file     : client-ek3-final.py
+- server file     : src/server-kelompok-3/server-2.py
+- data server     : src/server-kelompok-3/daftarAnggota.txt
+- client file     : client-ek3-final.py
 
 cara penggunaan
 
