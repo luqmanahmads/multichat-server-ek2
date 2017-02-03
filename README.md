@@ -12,17 +12,20 @@ data group chat : src/db_group.txt
 data pesan chat : src/db_message.txt
 
 cara penggunaan
+
 1. download file diatas
 2. jalankan file server "multichat_server.py"
 3. coba lakukan koneksi ke server menggunakan telnet
 
 gui client
 ----------
+
 server file     : src/server-kelompok-3/server-2.py
 data server     : src/server-kelompok-3/daftarAnggota.txt
 client file     : client-ek3-final.py
 
 cara penggunaan
+
 1. download file diatas
 2. jalankan file server "server-2.py"
 3. jalankan file client "client-ek3.py"
