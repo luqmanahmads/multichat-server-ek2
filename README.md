@@ -1,7 +1,11 @@
-# multichat-server-ek2
+multichat-server-ek2
+--------------------
+
 merupakan repository multichat server kelompok 2 dalam mata kuliah pemrograman jaringan E 2016/2017 Teknik Informatika - ITS, untuk dipergunakan sebaik - baiknya.
 
-# multichat server
+multichat server
+----------------
+
 server file     : src/multichat_server.py
 data user chat  : src/db.txt
 data group chat : src/db_group.txt
@@ -12,7 +16,8 @@ cara penggunaan
 2. jalankan file server "multichat_server.py"
 3. coba lakukan koneksi ke server menggunakan telnet
 
-# gui client
+gui client
+----------
 server file     : src/server-kelompok-3/server-2.py
 data server     : src/server-kelompok-3/daftarAnggota.txt
 client file     : client-ek3-final.py
